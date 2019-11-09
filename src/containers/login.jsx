@@ -11,7 +11,8 @@ class Login extends Form {
     super(props);
     this.state = {
       data: { username: "", password: "" },
-      errors: {}
+      errors: {},
+      focus: { email: "", username: "", fullname: "", password: "" }
     };
   }
 

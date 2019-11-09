@@ -8,7 +8,7 @@ class Form extends Component {
     this.state = {
       data: { username: "", password: "" },
       errors: {},
-      focus: ""
+      focus: { email: "", username: "", fullname: "", password: "" }
     };
   }
 
@@ -54,7 +54,8 @@ class Form extends Component {
     const data = { ...this.state.data };
     data[input.name] = input.value;
 
-    const focus = input && input.value ? "focused" : "";
+    const focus = { ...this.state.focus };
+    focus[input.name] = (input.value && "focused") || " ";
     this.setState({ data, errors, focus });
   };
 
@@ -80,7 +81,7 @@ class Form extends Component {
         value={data[name]}
         onChange={this.handleChange}
         error={errors[name]}
-        focus={focus}
+        focus={focus[name]}
       />
     );
   }

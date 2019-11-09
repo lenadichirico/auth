@@ -10,7 +10,8 @@ class Registration extends Form {
     super(props);
     this.state = {
       data: { email: "", fullname: "", username: "", password: "" },
-      errors: {}
+      errors: {},
+      focus: { email: "", username: "", fullname: "", password: "" }
     };
   }
 
