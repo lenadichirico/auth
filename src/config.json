@@ -1,0 +1,4 @@
+{
+  "apiUrl": "https://jsonplaceholder.typicode.com",
+  "jwtSecretKey": "fe1a1915a379f3be5394b64d14794932"
+}
