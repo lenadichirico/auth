@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 
 const Input = ({ type, name, label, value, onChange, error, focus }) => {
@@ -24,6 +25,16 @@ const Input = ({ type, name, label, value, onChange, error, focus }) => {
       )}
     </Group>
   );
+};
+
+Input.propTypes = {
+  name: PropTypes.string,
+  type: PropTypes.string,
+  label: PropTypes.string,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
+  error: PropTypes.string,
+  focus: PropTypes.string
 };
 
 const Group = styled.div`

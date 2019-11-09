@@ -90,7 +90,7 @@ class Form extends Component {
     const output = errors && Object.keys(errors).map(key => errors[key]);
     return (
       errors && (
-        <div style={{ "text-align": "center", color: "#ed4956" }}>{output}</div>
+        <div style={{ textAlign: "center", color: "#ed4956" }}>{output}</div>
       )
     );
   }

@@ -3,10 +3,6 @@ import styled from "@emotion/styled";
 import auth from "../services/authService";
 
 class Logout extends Component {
-  componentDidMount() {
-    // auth.logout();
-    // window.location = "/";
-  }
   handleLogout = () => {
     auth.logout();
     window.location = "/";

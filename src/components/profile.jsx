@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 import Logout from "./logout";
 
@@ -38,4 +39,8 @@ const UserData = styled.div`
   text-align: center;
   margin: 10px;
 `;
+
+Profile.propTypes = {
+  user: PropTypes.object
+};
 export default Profile;
